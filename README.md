@@ -12,21 +12,21 @@
 
 ## 2. Asymptotic Analysis
 
-| Data Structure | Operation | Best Case | Average Case | Worst Case | Auxiliary Space |
-| :--- | :--- | :--- | :--- | :--- | :--- |
+| Data Structure    | Operation | Best Case | Average Case | Worst Case | Auxiliary Space |
+|:------------------| :--- | :--- | :--- | :--- | :--- |
 | **Dynamic Array** | `add(x)` | $\Omega(1)$ | $\Theta(1)$ | $O(n)$ | $O(n)$ |
 | **Dynamic Array** | `add(index, x)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
 | **Dynamic Array** | `remove(index)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
 | **Dynamic Array** | `get(index)` | $\Omega(1)$ | $\Theta(1)$ | $O(1)$ | $O(1)$ |
 | **Dynamic Array** | `contains(x)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
-| **Linked List** | `add(x)` | $\Omega(1)$ | $\Theta(1)$ | $O(1)$ | $O(n)$ |
-| **Linked List** | `add(index, x)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
-| **Linked List** | `remove(index)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
-| **Linked List** | `get(index)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
-| **Linked List** | `contains(x)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
-| **Min-Heap** | `insert(x)` | $\Omega(1)$ | $\Theta(\log n)$ | $O(\log n)$ | $O(n)$ |
-| **Min-Heap** | `peekMin()` | $\Omega(1)$ | $\Theta(1)$ | $O(1)$ | $O(1)$ |
-| **Min-Heap** | `extractMin()` | $\Omega(\log n)$ | $\Theta(\log n)$ | $O(\log n)$ | $O(1)$ |
+| **Linked List**   | `add(x)` | $\Omega(1)$ | $\Theta(1)$ | $O(1)$ | $O(n)$ |
+| **Linked List**   | `add(index, x)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
+| **Linked List**   | `remove(index)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
+| **Linked List**   | `get(index)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
+| **Linked List**   | `contains(x)` | $\Omega(1)$ | $\Theta(n)$ | $O(n)$ | $O(1)$ |
+| **Min-Heap**      | `insert(x)` | $\Omega(1)$ | $\Theta(\log n)$ | $O(\log n)$ | $O(n)$ |
+| **Min-Heap**      | `peekMin()` | $\Omega(1)$ | $\Theta(1)$ | $O(1)$ | $O(1)$ |
+| **Min-Heap**      | `extractMin()` | $\Omega(\log n)$ | $\Theta(\log n)$ | $O(\log n)$ | $O(1)$ |
 
 ### Justification:
 1. **`get(index)`**: `DynamicArray` runs in $O(1)$ time due to direct memory offset calculation. `LinkedList` requires sequential pointer traversal from head to index, resulting in $\Theta(n)$.
